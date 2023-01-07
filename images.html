@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: white;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            font-size: 33px;
+            font-family: cursive;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .LeftImg {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .leftSec {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .rightSec {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .imgblock {
+            border: 1px solid black;
+            margin: 4px;
+            box-shadow: 2px 2px 22px #253fff;
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 2px;
+
+        }
+    </style>
+    <title>images</title>
+</head>
+
+<body>
+    <section>
+        <h1 style="color: Red; stroke:  black;">Yash ❤️ Tanu</h1>
+    </section>
+    <div class="LeftImg">
+        <ul class="leftSec">
+
+            <li class="imgblock"><img width="200" ; src="yashh\yash1.jpg" alt=""></li>
+            <li class="imgblock"><img width="300" ; src="yashh\yash2.jpg" alt=""></li>
+
+            <li class="imgblock"><img width="200" ; src="yashh\yash3.jpg" alt=""></li>
+            <li class="imgblock"><img width="250" ; src="yashh\yash4.jpg" alt=""></li>
+        </ul>
+
+        <ul class="rightSec">
+            <li class="imgblock"><img width="200" ; src="Tanu\tanu2.jpeg" alt=""></li>
+            <li class="imgblock"><img width="200" ; src="Tanu\tanu4.jpeg" alt=""></li>
+            <li class="imgblock"><img width="200" ; src="Tanu\tanu6.jpeg" alt=""></li>
+            <li class="imgblock"><img width="200" ; src="Tanu\tanu1.jpeg" alt=""></li>
+        </ul>
+
+
+        <!-- <ul class="rightSec">
+            <li style="list-style: none;" ><img src="F:\vs code\WebDevelopment\JavaScript Tutorial\js programs\wishh\Tanu\tanu1.jpeg" alt=""></li>
+        </ul> -->
+        <script>
+            let x = new Date();
+            m = x.toTimeString();
+            if (m >= "06:00:00" && m < "19:00:00") {
+                document.body.style.backgroundColor = "white";
+
+            }
+            else {
+               
+                document.body.style.backgroundColor = "black";
+                document.querySelector('.leftSec').style.boxShadow = " 2px 2px 30px red";
+                document.querySelector('h1').style.color = "Green";
+                document.querySelector('h1').style.textShadow = "2px 2px 20px blue";
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>
